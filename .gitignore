@@ -3,7 +3,9 @@
 
 # ...except essential
 !/.github
+!/.github/**
 !/patches
+!/patches/**
 !/.dockerignore
 !/.gitignore
 !/Dockerfile

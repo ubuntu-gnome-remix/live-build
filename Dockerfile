@@ -18,7 +18,7 @@ RUN apt-get update -yq \
 
 COPY patches/ /patches/
 
-RUN find /patches -type f -name '*.patch' -print0 | sort -z | xargs -t -0 -n 1 patch -p0 -i \
+RUN find /patches -type f -name '*.patch' -print0 | sort -z | xargs -t -0 -n 1 patch --verbose -p0 -i \
   && rm -rf /patches/
 
 COPY entrypoint.sh /entrypoint.sh
