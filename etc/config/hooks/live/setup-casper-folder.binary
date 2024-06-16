@@ -1,7 +1,0 @@
-#!/bin/sh
-
-mkdir casper || true
-mv boot/filesystem.squashfs casper/filesystem.squashfs || true
-mv boot/filesystem.size casper/filesystem.size || true
-mv boot/filesystem.packages-remove casper/filesystem.manifest-remove || true
-mv boot/filesystem.packages casper/filesystem.manifest || true

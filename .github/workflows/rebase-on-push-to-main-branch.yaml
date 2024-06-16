@@ -1,0 +1,17 @@
+---
+name: Rebase on push to main branch
+"on":
+  push:
+    branches: [main]
+jobs:
+  rebase:
+    name: Rebase on push to main branch
+    runs-on: ubuntu-latest
+    steps:
+      - name: Rebase all pull requests on push to the main branch
+        uses: peter-evans/rebase@v3
+        with:
+          base: main
+          exclude-drafts: true
+          exclude-labels: |
+            dependencies

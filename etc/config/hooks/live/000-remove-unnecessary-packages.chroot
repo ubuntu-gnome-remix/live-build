@@ -1,3 +1,0 @@
-#!/bin/sh
-
-apt-get autoremove --purge -f -q -y snapd gnome-console ubuntu-session
