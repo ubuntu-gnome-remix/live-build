@@ -1,0 +1,10 @@
+/tmp
+/builds
+.env.builder
+#
+/etc
+.gitignore
+docker-compose.yml
+Dockerfile
+LICENSE
+README.md

@@ -1,0 +1,12 @@
+services:
+
+  builder:
+    build: .
+    pull_policy: never
+    volumes:
+      - ./:/workspace/
+    working_dir: /workspace
+    privileged: true
+    env_file:
+      - path: .env.builder
+        required: false
