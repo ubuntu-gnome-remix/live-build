@@ -1,4 +1,4 @@
-FROM debian:bookworm-20251103 AS base
+FROM debian:bookworm-20251117 AS base
 
 ENV DEBIAN_FRONTEND=noninteractive
 ENV LANG=C.UTF-8
